@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import Image from 'next/image';
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
-import ButtonOutline from "../misc/ButtonOutline.";
-import LogoVPN from "../../public/assets/Logo.svg";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -48,24 +45,6 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to="feature"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("feature");
-              }}
-              className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                (activeLink === "feature"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
-              }
-            >
-              Feature
-            </LinkScroll>
-            <LinkScroll
-              activeClass="active"
               to="pricing"
               spy={true}
               smooth={true}
@@ -80,7 +59,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Pricing
+              Services
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -102,12 +81,6 @@ const Header = () => {
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <Link href="/">
-              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
-                Sign In
-              </a>
-            </Link>
-            <ButtonOutline>Sign Up</ButtonOutline>
           </div>
         </nav>
       </header>
