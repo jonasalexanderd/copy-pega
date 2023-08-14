@@ -10,40 +10,58 @@ import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 const Testimoni = ({
   listTestimoni = [
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      name: "Sofia Rodriguez",
+      image: "/assets/people-1.png",
+      city: "Ciudad de México",
+      country: "México",
+      rating: "4.8",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "We've witnessed a remarkable transformation since integrating Copypega into our operations. Their software solution has become an integral part of our daily routine, saving us precious hours that were once consumed by repetitive tasks. The efficiency and precision it brings to our workflow are truly commendable",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      name: "Liam Patel",
+      image: "/assets/people-2.png",
+      city: "San Juan",
+      country: "Puerto Rico",
+      rating: "4.7",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "In the realm of software solutions, Copypega stands out as a beacon of innovation. Our organization has experienced a significant boost in productivity ever since we started leveraging their tools. The ease with which we now handle complex data tasks has not only saved us time but has also elevated the quality of our work.",
     },
     {
-      name: "iezh Robert",
+      name: "Isabella Chen",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      city: "Vancouver",
+      country: "Canadá",
+      rating: "4.9",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Collaboration has taken on a new dimension with Copypega as our ally. The software they provide has seamlessly bridged gaps in our teamwork, making data sharing and joint projects a breeze. The way Copypega's tools integrate into our existing systems has fostered a smoother, more efficient collaborative environment.",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      name: "Noah Williams",
+      image: "/assets/people-4.png",
+      city: "Nueva York",
+      country: "Usa",
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Bid farewell to the era of manual errors! Copypega's software suite has emerged as our safeguard against inaccuracies. With its meticulous data handling capabilities, we can now rely on consistently precise results. Copypega has undeniably raised the bar for accuracy in our operations.",
+    },
+    {
+      name: "Ava Martinez",
+      image: "/assets/people-5.png",
+      city: "Buenos Aires",
+      country: "Argentina",
+      rating: "4.95",
+      testimoni:
+        "In the intricate world of technology, Copypega's software shines as a beacon of convenience. Its implementation has not only reduced the complexity of various tasks but has also yielded a remarkable time and effort savings. For any organization navigating the tech landscape, Copypega's offerings are a must-have.",
+    },
+    {
+      name: "Ethan Nguyen",
+      image: "/assets/people-3.png",
+      city: "Los Ángeles",
+      country: "Usa",
+      rating: "4.6",
+      testimoni:
+        "Our workflow has undergone a revolution ever since Copypega entered the scene. The seamless integration of their software into our processes has ushered in a new era of efficiency. What used to take substantial time and effort now yields instant, high-quality results, making Copypega an indispensable asset in our software arsenal.",
     },
   ],
 }) => {
@@ -95,6 +113,7 @@ const Testimoni = ({
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
                   <Image
+                    className="people-image"
                     src={listTestimonis.image}
                     height={50}
                     width={50}
