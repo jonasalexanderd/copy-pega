@@ -9,12 +9,12 @@ const defaultMeta = {
   description:
     'Copy Pega | Web, mobile and API development',
   // change base url of your web (without '/' at the end)
-  url: 'https://next-landing-vpn.vercel.app',
+  url: 'https://copypega.com',
   type: 'website',
   robots: 'follow, index',
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status
-  image: 'https://next-landing-vpn.vercel.app/assets/card-image.png',
+  image: 'https://copypega.com/assets/Logo.png',
   author: 'Jonás Dias'
 };
 
